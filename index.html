@@ -6,95 +6,140 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="description"
-      content="Start your development with Steller landing page."
-    />
-    <meta name="author" content="Devcrud" />
     <title>Hi, Its Jou</title>
-    <!-- font icons -->
     <link
       rel="stylesheet"
       href="assets/vendors/themify-icons/css/themify-icons.css"
     />
-    <!-- Bootstrap + Steller main styles -->
-    <link rel="stylesheet" href="assets/css/steller.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- Page navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
-      data-spy="affix"
-      data-offset-top="0"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="assets/imgs/logo.svg" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto align-items-center">
-            <li class="nav-item">
+  <body class="w-full">
+    <section id="Header">
+      <div
+        class="hidden md:flex justify-between shadow-lg bg-white items-center"
+      >
+        <div class="">
+          <a class="" href="#"
+            ><img class="max-w-[100px]" src="assets/imgs/logo.svg" alt=""
+          /></a>
+        </div>
+        <div class="">
+          <ul class="flex gap-2">
+            <li class="nav-item px-4 py-2">
               <a class="nav-link" href="#home">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-4 py-2">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-4 py-2">
               <a class="nav-link" href="#service">Experience</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-4 py-2">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-4 py-2">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- End of page navibation -->
+
+      <di<div class="md:hidden flex justify-between bg-white shadow-lg relative">
+        <a class="" href="#">
+          <img class="max-w-[100px]" src="assets/imgs/logo.svg" alt="Logo" />
+        </a>
+        <button class="p-4" id="openSidebarButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+        </button>
+        <div class="sidebar fixed w-screen h-screen left-0 right-0 bg-white p-10 flex flex-col gap-4" id="sidebar">
+          <div class="w-full flex justify-end">
+            <button id="closeSidebarButton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <ul class="flex flex-col gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="https://likjou.github.io/#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://likjou.github.io/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://likjou.github.io/#service">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://likjou.github.io/#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://likjou.github.io/#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- Page Header -->
-    <header class="header" id="home">
-      <div class="container">
-        <div class="infos">
-          <h6 class="subtitle">hello,I'm</h6>
-          <h6 class="title">Lik Jou</h6>
-          <p>Full Stack Developer</p>
+    <header id="home">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center p-10 gap-10">
+        <div class=" flex flex-col items-center gap-10">
+          <div class=" flex flex-col items-center justify-center">
+            <p class="text-[1.5rem] font-light">Hello,I'm</p>
+            <p class="text-[4rem] font-bold">Lik Jou</p>
+            <p class="text-[1.5rem] font-light">Front End Developer</p>
+          </div>
 
-          <div class="buttons pt-3">
+          <div class=" rounded-full bg-[#D580FF] p-3">
             <a href="assets/Developer_CV.pdf" download>
-              <button class="btn btn-dark rounded">DOWNLOAD CV</button>
+              <button class="">DOWNLOAD CV</button>
             </a>
           </div>
 
-          <div class="socials mt-4">
-            <a class="social-item" href="mailto:likjou@gmail.com"
+          <div class="flex gap-5">
+            <a class=" w-10 h-10 flex items-center justify-center rounded-full bg-[#D580FF]" href="mailto:likjou@gmail.com"
               ><i class="ti-email"></i
             ></a>
-            <a class="social-item" href="https://github.com/likjou"
+            <a class=" w-10 h-10 flex items-center justify-center rounded-full bg-[#D580FF]" href="https://github.com/likjou"
               ><i class="ti-github"></i
             ></a>
             <a
-              class="social-item"
+              class=" w-10 h-10 flex items-center justify-center rounded-full bg-[#D580FF]"
               href="https://www.linkedin.com/in/likjou-lee/"
               ><i class="ti-linkedin"></i
             ></a>
           </div>
         </div>
-        <div class="img-holder">
+        <div class="w-full flex justify-center">
           <img src="assets/imgs/man.svg" alt="" />
         </div>
       </div>
@@ -102,21 +147,23 @@
     <!-- End of Page Header -->
 
     <!-- About section -->
-    <section id="about" class="section mt-3">
-      <div class="container mt-5">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3">
-            <img src="assets/imgs/jou.jpeg" alt="" class="img-thumbnail mb-4" />
+    <section id="about" class="p-10">
+      <div class="">
+        <div class="grid grid-cols-1 md:grid-cols-3 p-10">
+          <div class="md:justify-center md:flex col-span-1">
+            <img class="rounded-2xl max-w-[300px]" src="assets/imgs/jou.jpeg" alt="" class="" />
           </div>
-          <div class="pl-md-4 col-md-9">
-            <h6 class="title">Lik Jou</h6>
-            <p class="subtitle">Full Stack Developer</p>
-            <p>
-              As a seasoned Fullstack Developer, I specialize in crafting
-              seamless digital experiences with a focus on SvelteKit for
-              frontend and Django for backend. With a blend of creativity and
-              technical expertise, I thrive on building dynamic web applications
-              that are both user-friendly and efficient.
+          <div class=" flex flex-col gap-5 items-center md:items-start col-span-2">
+            <div class="w-full flex flex-col items-center md:items-start">
+              <h6 class="text-[2rem] font-bold">Lik Jou</h6>
+              <p class="text-[1.1rem] font-light text-[gray]">Front End Developer</p>
+            </div>
+            <p class="text-justify">
+              As a seasoned Front End Developer, I specialize in crafting
+              seamless digital experiences with a focus on SvelteKit/NuxtJS for
+              frontend and FastAPI/Supabase for backend. With a blend of
+              creativity and technical expertise, I thrive on building dynamic
+              web applications that are both user-friendly and efficient.
             </p>
             <p>
               My experience includes developing responsive and scalable
@@ -127,8 +174,8 @@
               learning, Let's connect and explore opportunities to collaborate
               on exciting ventures!
             </p>
-            <a href="assets/developer cv.pdf" download>
-              <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>
+            <a href="assets/Developer_CV.pdf" download class="bg-[#D580FF] px-4 py-2 rounded-full">
+              <button class="">DOWNLOAD CV</button>
             </a>
           </div>
         </div>
@@ -136,42 +183,31 @@
     </section>
 
     <!-- Service section -->
-    <section id="service" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Experience</h6>
-        <h6 class="section-title mb-4">What I Do</h6>
-        <p class="mb-5 pb-4">
-          Below is a highlight of what i have done <br />
-          through my career.
-        </p>
+    <section id="service">
+      <div class=" text-center my-10">
+        <h6 class="text-[2rem] font-bold">Experience</h6>
+        <h6 class="text-[1.2rem] text-[gray]">What I Do</h6>
 
-        <div class="row">
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-10 gap-5">
+            <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
               <div class="card-body">
                 <i class="icon ti-server"></i>
                 <h5>Backend Development</h5>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
+            <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
               <div class="card-body">
                 <i class="icon ti-desktop"></i>
                 <h5>Web App</h5>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
+            <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
               <div class="card-body">
                 <i class="icon ti-mobile"></i>
                 <h5>Responsive UI</h5>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 mb-4">
-            <div class="custom-card card border">
+            <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
               <div class="card-body">
                 <i class="icon ti-layout"></i>
                 <h5>Frontend Development</h5>
@@ -185,51 +221,48 @@
 
     <!-- Skills section -->
     <section class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Skills</h6>
-        <h6 class="section-title mb-4">Why Choose me</h6>
-        <p class="mb-5 pb-4">
-          Skills i have accumulated throughout my time <br />
-          in the software development field.
-        </p>
+      <div class=" text-center grid grid-cols-1 gap-5">
+        <div>
+          <h6 class="text-[2rem] font-bold">Skills</h6>
+          <h6 class="text-[1.2rem] text-[gray]">Why Choose Me</h6>
+        </div>
 
-        <div class="row text-left">
-          <div class="col-sm-2 text-center">
-            <h6 class="mb-3">Adobe Illustrator</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 my-10">
+          <div class="text-center">
+            <h6 class="mb-3">Wordpress</h6>
           </div>
-
-          <div class="col-sm-2 text-center">
+          <div class="text-center">
             <h6 class="mb-3">Web App</h6>
           </div>
-          <div class="col-sm-2 text-center">
+          <div class="text-center">
             <h6 class="mb-3">Web UI</h6>
           </div>
-          <div class="col-sm-2 text-center">
-            <h6 class="mb-3">Front End Development</h6>
+          <div class="text-center">
+            <h6 class="mb-3">Figma</h6>
           </div>
-          <div class="col-sm-2 text-center">
-            <h6 class="mb-3">Back End Development</h6>
+          <div class="text-center">
+            <h6 class="mb-3">Supabase</h6>
           </div>
-          <div class="col-sm-2 text-center">
+          <div class="text-center">
             <h6 class="mb-3">python</h6>
           </div>
-          <div class="col-sm-2 text-center">
+          <div class="text-center">
             <h6 class="mb-3">Django</h6>
           </div>
-          <div class="col-sm-2 text-center">
-            <h6 class="mb-3">NodeJS</h6>
+          <div class="text-center">
+            <h6 class="mb-3">VueJS</h6>
           </div>
-          <div class="col-sm-2 text-center">
+          <div class="text-center">
             <h6 class="mb-3">SvelteKit</h6>
           </div>
-          <div class="col-sm-2 text-center">
-            <h6 class="mb-3">Django DRF</h6>
+          <div class="text-center">
+            <h6 class="mb-3">FastAPI</h6>
           </div>
-          <div class="col-sm-2 text-center">
+          <div class="text-center">
             <h6 class="mb-3">Javascript</h6>
           </div>
-          <div class="col-sm-2 text-center">
-            <h6 class="mb-3">linux</h6>
+          <div class="text-center">
+            <h6 class="mb-3">NuxtJS</h6>
           </div>
         </div>
       </div>
@@ -237,91 +270,82 @@
     <!-- End of Skills sections -->
 
     <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-      <div class="container text-center">
-        <h6 class="subtitle">Portfolio</h6>
-        <h6 class="section-title mb-4">Check My Wonderful Works</h6>
-        <p class="mb-5 pb-4">
-          Here are some projects i have been working on my own <br />
-          throughout my career.
-        </p>
+    <section id="portfolio" class="section mt-10">
+      <div class="text-center grid grid-cols-1 gap-10">
+        <div>
+          <h6 class="text-[2rem] font-bold">Portfolio</h6>
+          <h6 class="text-[1.2rem] text-[gray]">Checkout My Wonderful Works</h6>
+        </div>
 
-        <div style="">
-          <div style="width: auto">
-            <p class="section-title">MYFE</p>
-            <p>Ecommerce App built with sveltekit</p>
-            <img src="assets/imgs/page.png" style="max-width: 300px" alt="" />
+        <div class="flex flex-col items-center gap-10">
+          <div class="flex flex-col items-center gap-4">
+            <div>
+              <p class="text-[1.5rem] font-bold">EATNCLAIM</p>
+              <p class="text-[1rem] text-[gray]">Receipt Collection App with Nuxt and FastAPI</p>
+              <a href="https://eatnclaim.com/" class="underline"
+                >eatnclaim.com</a
+              >
+            </div>
+            <img
+              src="assets/imgs/eatnclaim.png"
+              style="max-width: 300px"
+              alt=""
+            />
           </div>
-          <div style="width: auto; margin-top: 3rem">
-            <p class="section-title">MYAPI</p>
-            <p>API for Ecommerce built with Django DRF</p>
-            <img src="assets/imgs/api.png" style="max-width: 700px" alt="" />
+          <div class="flex flex-col items-center gap-4 p-4">
+            <div>
+              <p class="text-[1.5rem] font-bold">MBK Malaysia</p>
+              <p class="text-[1rem] text-[gray]">Digital Categolue for beauty products with Wordpress</p>
+              <a href="https://mbkmalaysia.com/" class="underline"
+                >mbkmalaysia.com</a
+              >
+            </div>
+            <img src="assets/imgs/mbk.png" class="max-w-[700px] alt="mbk" />
+          </div>
+          <div class="flex flex-col items-center gap-4 p-4">
+            <div>
+              <p class="text-[1.5rem] font-bold">Digital Dino Studio</p>
+              <p class="text-[1rem] text-[gray]">Business Site for a Digital Agency with Wordpress</p>
+              <a href="https://digitaldinostudio.com/" class="underline"
+                >digitaldinostudio.com</a
+              >
+            </div>
+            <img src="assets/imgs/dino.png" class="max-w-[700px]" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!-- End of portfolio section -->
 
-    <!-- Hire me section -->
-    <section class="bg-gray p-0 section">
-      <div class="container">
-        <div class="card bg-primary">
-          <div class="card-body text-light">
-            <div class="row align-items-center">
-              <div class="col-sm-9 text-center text-sm-left">
-                <h5 class="mt-3">Hire Me For Your Project</h5>
-                <p class="mb-3">
-                  Dedicated Fullstack Developer ready to bring your project to
-                  life with expertise and passion.
-                </p>
-              </div>
-              <div class="col-sm-3 text-center text-sm-right">
-                <a href="assets/developer cv.pdf" download>
-                  <button class="btn btn-light rounded">Hire Me!</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End od Hire me section. -->
-
     <!-- Contact Section -->
     <section
       id="contact"
-      class="position-relative section"
-      style="margin-top: 4rem"
     >
-      <div class="container text-center">
-        <h6 class="subtitle">Contact</h6>
-        <h6 class="section-title mb-4">Get In Touch With Me</h6>
-        <p class="mb-5 pb-4">
-          I am just one click away from bring <br />
-          your ideas into reality.
-        </p>
+      <div class="container flex justify-center mt-10 w-full">
+        <div class="flex flex-col items-center">
+          <h6 class="text-[2rem] font-bold">Contact</h6>
+          <h6 class="text-[1.2rem] text-[gray]">Get In Touch With Me</h6>
+        </div>
       </div>
       <div
-        class="container text-center"
-        style="display: flex; flex-wrap: wrap; flex-direction: row"
+        class=" text-center grid grid-cols-1 md:grid-cols-3 p-10 gap-10"
       >
-        <div style="display: flex; flex: 1; flex-direction: column; gap: 1rem">
+        <div class="p-4 w-full flex flex-col gap-2 border rounded-2xl">
           <i class="ti-email"></i>
-          <a href="mailto:likjou@gmail.com" style="font-size: 1rem"
+          <a href="mailto:likjou@gmail.com"
             >likjou@gmail.com</a
           >
         </div>
-        <div style="display: flex; flex: 1; flex-direction: column; gap: 1rem">
+        <div class="p-4 w-full flex flex-col gap-2 border rounded-2xl">
           <i class="ti-github"></i>
-          <a href="https://github.com/likjou" style="font-size: 1rem"
+          <a href="https://github.com/likjou"
             >https://github.com/likjou</a
           >
         </div>
-        <div style="display: flex; flex: 1; flex-direction: column; gap: 1rem">
+        <div class="p-4 w-full flex flex-col gap-2 border rounded-2xl">
           <i class="ti-linkedin"></i>
           <a
             href="https://www.linkedin.com/in/likjou-lee/"
-            style="font-size: 1rem"
             >https://www.linkedin.com/in/likjou-lee/</a
           >
         </div>
@@ -330,10 +354,9 @@
     <!-- End of Contact Section -->
 
     <!-- Page Footer -->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-6">
+    <footer class="w-full ">
+      <div class="container flex justify-between p-4">
+          <div class="">
             <p>
               Copyright
               <script>
@@ -343,12 +366,11 @@
               <a href="https://github.com/likjou" target="_blank">lIkJOu</a>
             </p>
           </div>
-          <div class="col-sm-6">
+          <div class="">
             <div class="socials">
               <p><3</p>
             </div>
           </div>
-        </div>
       </div>
     </footer>
     <!-- End of page footer -->
@@ -361,5 +383,60 @@
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const openSidebarButton = document.getElementById('openSidebarButton');
+        const closeSidebarButton = document.getElementById('closeSidebarButton');
+        const sidebar = document.getElementById('sidebar');
+  
+        openSidebarButton.addEventListener('click', function () {
+          sidebar.classList.remove('slide-out');
+          sidebar.classList.add('slide-in', 'sidebar-open');
+        });
+  
+        closeSidebarButton.addEventListener('click', function () {
+          sidebar.classList.remove('slide-in');
+          sidebar.classList.add('slide-out');
+          setTimeout(() => {
+            sidebar.classList.remove('sidebar-open');
+          }, 300); // Match the duration of the slide-out animation
+        });
+      });
+    </script>
+
+    <style>
+      .sidebar {
+        /* transition: transform 0.3s ease-in-out; */
+        transform: translateX(-100%);
+        /* Hide the sidebar initially */
+      }
+      .sidebar-open {
+        transform: translateX(0);
+        /* Slide the sidebar into view */
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideOut {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(100%);
+        }
+      }
+      .sidebar.slide-in {
+        animation: slideIn 0.3s forwards;
+      }
+      .sidebar.slide-out {
+        animation: slideOut 0.3s forwards;
+      }
+    </style>
   </body>
 </html>
