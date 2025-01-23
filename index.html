@@ -6,12 +6,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Hi, Its Jou</title>
+    <title>Hi, Its Lik Jou</title>
     <link
       rel="stylesheet"
       href="assets/vendors/themify-icons/css/themify-icons.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+  />
   </head>
   <body class="w-full">
     <section id="Header">
@@ -52,7 +56,7 @@
           <div class=" flex flex-col items-center justify-center">
             <p class="text-[1.5rem] font-light">Hello,I'm</p>
             <p class="text-[4rem] font-bold">Lik Jou</p>
-            <p class="text-[1.5rem] font-light">Front End Developer</p>
+            <p class="text-[1.5rem] font-light">Full Stack Developer</p>
           </div>
 
           <div class=" rounded-full bg-[#D580FF] p-3">
@@ -85,31 +89,18 @@
     <!-- About section -->
     <section id="about" class="p-10">
       <div class="">
-        <div class="grid grid-cols-1 md:grid-cols-3 p-10">
-          <div class="flex col-span-1 justify-center">
-            <img class="rounded-2xl max-w-[300px]" src="assets/imgs/jou.jpeg" alt="" class="" />
+        <div class="flex flex-col lg:flex-row p-10 gap-10">
+          <div class="flex justify-center">
+            <img class="rounded-2xl max-w-[300px] object-cover " src="assets/imgs/jou.jpeg" alt="" class="" />
           </div>
-          <div class=" flex flex-col gap-5 items-center md:items-start col-span-2">
+          <div class=" flex flex-col gap-5 items-center md:items-start">
             <div class="w-full flex flex-col items-center md:items-start">
               <h6 class="text-[2rem] font-bold">Lik Jou</h6>
-              <p class="text-[1.1rem] font-light text-[gray]">Front End Developer</p>
+              <p class="text-[1.1rem] font-light text-[gray]">Full Stack Developer</p>
             </div>
-            <p class="text-justify">
-              As a seasoned Front End Developer, I specialize in crafting
-              seamless digital experiences with a focus on SvelteKit/NuxtJS for
-              frontend and FastAPI/Supabase for backend. With a blend of
-              creativity and technical expertise, I thrive on building dynamic
-              web applications that are both user-friendly and efficient.
-            </p>
-            <p>
-              My experience includes developing responsive and scalable
-              solutions, collaborating closely with cross-functional teams to
-              meet client requirements and exceed expectations. Proficient in
-              troubleshooting and debugging, I ensure smooth functionality
-              across all aspects of the application. Passionate about continuous
-              learning, Let's connect and explore opportunities to collaborate
-              on exciting ventures!
-            </p>
+            <p class="text-justify"> As a proficient Full Stack Developer, I specialize in building robust and scalable web applications with a focus on NuxtJS for the frontend and FastAPI for the backend. Leveraging a deep understanding of modern development frameworks, I excel at creating seamless, efficient, and user-friendly digital experiences that cater to diverse client needs. </p> 
+            <p class="text-justify"> With a strong foundation in full-stack development, I have expertise in designing and implementing responsive, high-performance applications. Beyond the web, I am profecient in React Native, enabling me to develop intuitive and engaging mobile applications that provide consistent user experiences across platforms. My approach combines technical expertise with creative problem-solving to deliver solutions that are both innovative and reliable. </p>
+             <p class="text-justify"> Collaboration is at the core of my workflow—I thrive in cross-functional teams and align technical solutions with business objectives. From troubleshooting and debugging to optimizing application performance, I ensure that every aspect of my work meets the highest standards of quality and efficiency. Passionate about continuous learning, I am always eager to explore cutting-edge technologies and new opportunities. Let’s connect and bring visionary ideas to life! </p>
             <a href="assets/Developer_CV.pdf" download class="bg-[#D580FF] px-4 py-2 rounded-full">
               <button class="">DOWNLOAD CV</button>
             </a>
@@ -133,14 +124,14 @@
             </div>
             <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
               <div class="card-body">
-                <i class="icon ti-desktop"></i>
-                <h5>Web App</h5>
+                <i class="icon ti-mobile"></i>
+                <h5>Mobile App Development</h5>
               </div>
             </div>
             <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
               <div class="card-body">
-                <i class="icon ti-mobile"></i>
-                <h5>Responsive UI</h5>
+                <i class="icon ti-cloud"></i>
+                <h5>DevOps & Deployment</h5>
               </div>
             </div>
             <div class="custom-card card border p-10 hover:bg-[#D580FF] transition-all ease duration-300 rounded-lg">
@@ -164,40 +155,52 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 my-10">
-          <div class="text-center">
-            <h6 class="mb-3">Wordpress</h6>
+          <div class="text-center flex flex-col items-center gap-2">
+              <img src="/assets/imgs/wordpress.png" class="max-w-[50px] max-h-[50px]" alt="Wordpress">
+              <h6 class="mb-3">WordPress</h6>
+            </div>
+            <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/linux.png" class="max-w-[50px] max-h-[50px]" alt="Linux">
+            <h6 class="mb-3">Linux</h6>
           </div>
-          <div class="text-center">
-            <h6 class="mb-3">Web App</h6>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/ui.png" class="max-w-[50px] max-h-[50px]" alt="UI UX">
+            <h6 class="mb-3">UI/UX</h6>
           </div>
-          <div class="text-center">
-            <h6 class="mb-3">Web UI</h6>
-          </div>
-          <div class="text-center">
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/figma.png" class="max-w-[50px] max-h-[50px]" alt="Figma">
             <h6 class="mb-3">Figma</h6>
           </div>
-          <div class="text-center">
-            <h6 class="mb-3">Supabase</h6>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/docker.png" class="max-w-[50px] max-h-[50px]" alt="Docker">
+            <h6 class="mb-3">Docker</h6>
           </div>
-          <div class="text-center">
-            <h6 class="mb-3">python</h6>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/python.png" class="max-w-[50px] max-h-[50px]" alt="Python">
+            <h6 class="mb-3">Python</h6>
           </div>
-          <div class="text-center">
-            <h6 class="mb-3">Django</h6>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/physics.png" class="max-w-[50px] max-h-[50px]" alt="React Native">
+            <h6 class="mb-3">React Native</h6>
           </div>
-          <div class="text-center">
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/document.png" class="max-w-[50px] max-h-[50px]" alt="Vue JS">
             <h6 class="mb-3">VueJS</h6>
           </div>
-          <div class="text-center">
-            <h6 class="mb-3">SvelteKit</h6>
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/mysql.png" class="max-w-[50px] max-h-[50px]" alt="MySQL">
+            <h6 class="mb-3">MySQL</h6>
           </div>
-          <div class="text-center">
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/FastAPI.png" class="max-w-[50px] max-h-[50px]" alt="FastAPI">
             <h6 class="mb-3">FastAPI</h6>
           </div>
-          <div class="text-center">
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/js.png" class="max-w-[50px] max-h-[50px]" alt="Javascript">
             <h6 class="mb-3">Javascript</h6>
           </div>
-          <div class="text-center">
+          <div class="text-center flex flex-col items-center gap-2">
+            <img src="/assets/imgs/nuxt.svg" class="max-w-[50px] max-h-[50px]" alt="Nuxt JS">
             <h6 class="mb-3">NuxtJS</h6>
           </div>
         </div>
@@ -216,40 +219,100 @@
         <div class="flex flex-col items-center gap-10">
           <div class="flex flex-col items-center gap-4">
             <div>
+              <p class="text-[1.5rem] font-bold">MyTicketPlatform</p>
+              <p class="text-[1rem] text-[gray]">Ticketing Platform</p>
+            </div>
+            <div class="flex w-full justify-center flex ">
+              <div id="carousel3" class="splide max-w-[1000px] h-auto">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/ticket1.png" alt="Slide 1" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/ticket2.png" alt="Slide 2" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/ticket3.png" alt="Slide 3" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/ticket4.png" alt="Slide 3" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/ticket5.png" alt="Slide 3" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div>
+              <p class="text-[1.5rem] font-bold">MyTicketManager</p>
+              <p class="text-[1rem] text-[gray]">Ticket Manager Mobile App</p>
+            </div>
+            <div class="flex w-full justify-center flex ">
+              <div id="carousel4" class="splide max-w-[1000px]">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/app1.png" alt="Slide 1" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/app2.png" alt="Slide 2" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div>
               <p class="text-[1.5rem] font-bold">EATNCLAIM</p>
               <p class="text-[1rem] text-[gray]">Receipt Collection App with Nuxt and FastAPI</p>
               <a href="https://eatnclaim.com/" class="underline"
                 >eatnclaim.com</a
               >
             </div>
-            <img
-              src="assets/imgs/eatnclaim.png"
-              style="max-width: 300px"
-              alt=""
-            />
+            <div class="flex w-full justify-center flex ">
+              <div id="carousel" class="splide max-w-[1000px]">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/eatnclaim1.png" alt="Slide 1" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/eatnclaim2.png" alt="Slide 2" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/eatnclaim3.png" alt="Slide 3" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="flex flex-col items-center gap-4 p-4">
             <div>
-              <p class="text-[1.5rem] font-bold">MBK Malaysia</p>
-              <p class="text-[1rem] text-[gray]">Digital Categolue for beauty products with Wordpress</p>
-              <a href="https://mbkmalaysia.com/" class="underline"
-                >mbkmalaysia.com</a
-              >
+              <p class="text-[1.5rem] font-bold">WordPress Sites</p>
+              <p class="text-[1rem] text-[gray]">Landing Page & Catelogue Site for Business</p>
             </div>
-            <div class="object-cover p-10">
-              <img src="assets/imgs/mbk.png" class="object-cover max-w-full  alt="mbk" />
+            <div class="flex w-full justify-center flex ">
+              <div id="carousel2" class="splide max-w-[1000px]">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/mbk.png" alt="Slide 1" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="/assets/imgs/dino.png" alt="Slide 2" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col items-center gap-4 p-4">
-            <div>
-              <p class="text-[1.5rem] font-bold">Digital Dino Studio</p>
-              <p class="text-[1rem] text-[gray]">Business Site for a Digital Agency with Wordpress</p>
-              <a href="https://digitaldinostudio.com/" class="underline"
-                >digitaldinostudio.com</a
-              >
-            </div>
-            <img src="assets/imgs/dino.png" class="object-cover max-w-full" alt="" />
-          </div>
+
         </div>
       </div>
     </section>
@@ -259,7 +322,7 @@
     <section
       id="contact"
     >
-      <div class="container flex justify-center mt-10 w-full">
+      <div class=" flex justify-center mt-10 w-full">
         <div class="flex flex-col items-center">
           <h6 class="text-[2rem] font-bold">Contact</h6>
           <h6 class="text-[1.2rem] text-[gray]">Get In Touch With Me</h6>
@@ -288,12 +351,13 @@
           >
         </div>
       </div>
+      
     </section>
     <!-- End of Contact Section -->
 
     <!-- Page Footer -->
     <footer class="w-full ">
-      <div class="container flex justify-between p-4">
+      <div class=" flex justify-between p-10">
           <div class="">
             <p>
               Copyright
@@ -341,6 +405,7 @@
           }, 300); // Match the duration of the slide-out animation
         });
       });
+      
     </script>
 
     <style>
@@ -375,6 +440,81 @@
       .sidebar.slide-out {
         animation: slideOut 0.3s forwards;
       }
+
+      .splide__slide img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: contain;
+      aspect-ratio: 3/4;
+      max-height: 300px;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .splide__slide img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: contain;
+      aspect-ratio: 3/4;
+      max-height: 600px;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1rem;
+    }
+    }
+
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      // Initialize Splide
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#carousel", {
+          type: "loop", // Carousel type (e.g., 'slide', 'loop', 'fade')
+          perPage: 1,  // Number of slides visible at once
+          autoplay: true, // Auto-slide functionality
+          interval: 3000, // Interval for auto-slide in milliseconds
+          pagination: true, // Show pagination dots
+          arrows: true, // Show navigation arrows
+        }).mount();
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#carousel2", {
+          type: "loop", // Carousel type (e.g., 'slide', 'loop', 'fade')
+          perPage: 1,  // Number of slides visible at once
+          autoplay: true, // Auto-slide functionality
+          interval: 3000, // Interval for auto-slide in milliseconds
+          pagination: true, // Show pagination dots
+          arrows: true, // Show navigation arrows
+        }).mount();
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#carousel3", {
+          type: "loop", // Carousel type (e.g., 'slide', 'loop', 'fade')
+          perPage: 1,  // Number of slides visible at once
+          autoplay: true, // Auto-slide functionality
+          interval: 3000, // Interval for auto-slide in milliseconds
+          pagination: true, // Show pagination dots
+          arrows: true, // Show navigation arrows
+        }).mount();
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#carousel4", {
+          type: "loop", // Carousel type (e.g., 'slide', 'loop', 'fade')
+          perPage: 1,  // Number of slides visible at once
+          autoplay: true, // Auto-slide functionality
+          interval: 3000, // Interval for auto-slide in milliseconds
+          pagination: true, // Show pagination dots
+          arrows: true, // Show navigation arrows
+        }).mount();
+      });
+    </script>
   </body>
 </html>
